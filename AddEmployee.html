@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="AddEmployee.html">ADD EMPLOYEE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="SearchEmployee.html">SEARCH EMPLOYEE</a>
+          </li>
+          
+         
+        </ul>
+      </nav>
+      <form>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <table class="table">
+                    <tr>
+                        <td>Employee code</td>
+                        <td><input type="text" class="form-control" id="empcode"></td>
+                    </tr>
+                    <tr>
+                        <td>Name</td>
+                        <td><input type="text" class="form-control" id="name"></td>
+                    </tr>
+                    <tr>
+                        <td>Designation</td>
+                        <td><input type="text" class="form-control" id="designation"></td>
+                    </tr>
+                    <tr>
+                        <td>Salary</td>
+                        <td><input type="text" class="form-control" id="salary"></td>
+                    </tr>
+                    <tr>
+                        <td>District</td>
+                        <td><select name="dropdown" id="district" class="form-control">
+                            <option value="kasargod">Kasargod</option>
+                            <option value="kannur">Kannur</option>
+                            <option value="wayanad">Wayanad</option>
+                            <option value="kozhikode">Kozhikode</option>
+                            <option value="palakkad">Palakkad</option>
+                            <option value="idukki">Idukki</option>
+                            <option value="ernakulam">Ernakulam</option>
+                            <option value="trissur">Trissur</option>
+                            <option value="kottayam">Kottayam</option>
+                            <option value="pathanamthitta">Pathanamthitta</option>
+                            <option value="malappuram">Malappuram</option>
+                            <option value="kollam">Kollam</option>
+                            <option value="alappuzha">Alappuzha</option>
+                            <option value="thiruvananthapuram">Thiruvananthapuram</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td><input type="radio" name = "gender" id="gender">Male
+                            <input type="radio" name = "gender" id="gender">Female</td>
+                    </tr>
+                    <tr>
+                        <td>Place</td>
+                        <td><input type="text" class="form-control" id="place"></td>
+                    </tr>
+                    <tr>
+                        <td>Mobile</td>
+                        <td><input type="text" class="form-control" id="mobile"></td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td><input type="textarea" class="form-control" id="address"></td>
+                    </tr>
+                    <tr>
+                        <td>DOB</td>
+                        <td><input type="date" class="form-control" id="dob"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button class="btn btn-secondary" onclick="readAllValues();">SUBMIT</button></td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+    </div>
+</form>
+<script>
+    function readAllValues(){
+        var empcode = document.getElementById("empcode").value;
+        var name = document.getElementById("name").value;
+        var designation = document.getElementById("designation").value;
+        var salary = document.getElementById("salary").value;
+        var district = document.getElementById("district").value;
+        var gender = document.getElementById("gender").value;
+        var place = document.getElementById("place").value;
+        var mobile = document.getElementById("mobile").value;
+        var address = document.getElementById("address").value;
+        var dob = document.getElementById("dob").value;
+        // var empDetail = {EmployeeCode:empcode,Name:name,Designation:designation,Salary:salary,District:district,Gender:gender,
+        // Place:place,Mobile:mobile,Address:address,DOB:dob};
+        console.log(empcode);
+        console.log(name);
+        console.log(designation);
+        console.log(salary);
+        console.log(district);
+        console.log(gender);
+        console.log(place);
+        console.log(mobile);
+        console.log(address);
+        console.log(dob);
+    }
+</script>
+</body>
+</html>
