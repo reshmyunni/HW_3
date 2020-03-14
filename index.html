@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">STUDENT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="book.html">LIBRARY</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="product.html">PRODUCT</a>
+          </li>
+         
+        </ul>
+      </nav>
+      <form>
+    <table class="table">
+        <tr>
+            <td>Name</td>
+            <td><input type="text" class="form-control" id="name"></td>
+        </tr>
+        <tr>
+            <td>Rollno</td>
+            <td><input type="text" class="form-control" id="rollno"></td>
+        </tr>
+        <tr>
+            <td>Admno</td>
+            <td><input type="text" class="form-control" id="admno"></td>
+        </tr>
+        <tr>
+            <td>College</td>
+            <td><input type="text" class="form-control" id="college"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button class="btn btn-secondary" onclick="readAllValues();">Submit</button></td>
+        </tr>
+    </table>
+</form>
+    <script>
+        function readAllValues(){
+            var name = document.getElementById("name").value;
+            var rollno = document.getElementById("rollno").value;
+            var admno = document.getElementById("admno").value;
+            var college = document.getElementById("college").value;
+            console.log(name,rollno,admno,college);
+        }
+    </script>
+</body>
+</html>
